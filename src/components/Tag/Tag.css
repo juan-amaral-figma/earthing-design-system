@@ -1,0 +1,1 @@
+.earthing-tag { display:inline-flex;align-items:center;padding:4px 10px;border-radius:var(--earthing-radius-pill);background:var(--earthing-tag-bg);color:var(--earthing-text-tag);font:700 12px/1.35 var(--earthing-font-body);white-space:nowrap;text-transform:uppercase; }

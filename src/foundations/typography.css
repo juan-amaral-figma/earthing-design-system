@@ -1,0 +1,24 @@
+.earthing-display-hero { font: 400 64px/1.1 var(--earthing-font-display); }
+.earthing-display-destination { font: 400 44px/1 var(--earthing-font-display); }
+.earthing-display-hero-mobile { font: 400 36px/1.15 var(--earthing-font-display); }
+.earthing-heading-1 { font: 400 40px/1 var(--earthing-font-display); }
+.earthing-heading-2 { font: 400 32px/1.2 var(--earthing-font-display); }
+.earthing-heading-3 { font: 400 28px/1 var(--earthing-font-display); }
+.earthing-heading-4 { font: 400 24px/1 var(--earthing-font-display); }
+.earthing-brand-logo { font: 700 20px/1 var(--earthing-font-body); }
+.earthing-body-large { font: 400 18px/1 var(--earthing-font-body); }
+.earthing-body-large-bold { font: 700 18px/1 var(--earthing-font-body); }
+.earthing-body-default { font: 400 16px/1 var(--earthing-font-body); }
+.earthing-body-default-semibold { font: 600 16px/1 var(--earthing-font-body); }
+.earthing-body-card { font: 400 15px/1.4 var(--earthing-font-body); }
+.earthing-body-small { font: 400 14px/1.5 var(--earthing-font-body); }
+.earthing-body-small-semibold { font: 600 14px/1 var(--earthing-font-body); }
+.earthing-body-small-medium { font: 500 14px/1 var(--earthing-font-body); }
+.earthing-label-tag { font: 700 12px/1 var(--earthing-font-body); }
+.earthing-label-stat { font: 600 12px/1 var(--earthing-font-body); letter-spacing: .5px; }
+.earthing-label-caption { font: 400 12px/1 var(--earthing-font-body); }
+.earthing-label-uppercase { font: 700 14px/1 var(--earthing-font-body); letter-spacing: 1px; text-transform: uppercase; }
+
+@media (max-width: 767px) {
+  .earthing-display-hero { font-size: 36px; line-height: 1.15; }
+}

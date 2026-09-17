@@ -1,0 +1,3 @@
+.earthing-logo { display:inline-flex;align-items:center;gap:8px;color:var(--earthing-text-primary);font:400 20px/1 var(--earthing-font-display);white-space:nowrap; }
+.earthing-logo img { display:block;width:32px;height:32px;object-fit:contain; }
+.earthing-logo--compact { font-size:18px; }.earthing-logo--compact img { width:24px;height:24px; }

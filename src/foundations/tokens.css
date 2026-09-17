@@ -1,0 +1,82 @@
+:root,
+[data-earthing-theme='light'] {
+  --earthing-forest-950: #090b09;
+  --earthing-forest-900: #0e110e;
+  --earthing-forest-800: #1c241c;
+  --earthing-forest-700: #252f25;
+  --earthing-forest-600: #2d3a2d;
+  --earthing-forest-500: #526252;
+  --earthing-forest-400: #5b745b;
+  --earthing-forest-300: #8caf7a;
+  --earthing-forest-200: #a5b5a5;
+  --earthing-forest-100: #e4ecd1;
+  --earthing-neutral-white: #ffffff;
+  --earthing-neutral-50: #faf9f5;
+  --earthing-neutral-100: #f2f0e8;
+  --earthing-neutral-200: #ecebe3;
+  --earthing-neutral-300: #e0ddd5;
+  --earthing-neutral-900: #000000;
+
+  --earthing-bg-primary: var(--earthing-neutral-50);
+  --earthing-bg-secondary: var(--earthing-neutral-200);
+  --earthing-bg-card: var(--earthing-neutral-white);
+  --earthing-bg-elevated: var(--earthing-neutral-white);
+  --earthing-bg-accent: var(--earthing-forest-100);
+  --earthing-bg-inverse: var(--earthing-forest-600);
+  --earthing-bg-input: var(--earthing-neutral-white);
+  --earthing-bg-footer: #f5f5f0;
+  --earthing-bg-banner: #d9e0d1;
+  --earthing-text-primary: #1a1a1a;
+  --earthing-text-secondary: #667366;
+  --earthing-text-tertiary: var(--earthing-forest-400);
+  --earthing-text-inverse: var(--earthing-neutral-50);
+  --earthing-text-on-accent: var(--earthing-neutral-white);
+  --earthing-text-tag: #667366;
+  --earthing-text-link: var(--earthing-forest-400);
+  --earthing-border-default: #d9d9d4;
+  --earthing-border-strong: var(--earthing-forest-600);
+  --earthing-border-subtle: var(--earthing-neutral-200);
+  --earthing-accent-primary: var(--earthing-forest-300);
+  --earthing-action-primary: var(--earthing-forest-600);
+  --earthing-action-primary-text: var(--earthing-neutral-50);
+  --earthing-action-secondary: var(--earthing-neutral-white);
+  --earthing-action-secondary-text: var(--earthing-forest-600);
+  --earthing-surface-overlay: var(--earthing-neutral-900);
+  --earthing-surface-footer: var(--earthing-forest-600);
+  --earthing-tag-bg: var(--earthing-forest-100);
+  --earthing-tag-text: var(--earthing-forest-600);
+
+  --earthing-font-display: 'Young Serif', Georgia, serif;
+  --earthing-font-body: 'DM Sans', Arial, sans-serif;
+  --earthing-radius-sm: 8px;
+  --earthing-radius-md: 16px;
+  --earthing-radius-lg: 24px;
+  --earthing-radius-pill: 999px;
+  --earthing-focus-ring: 0 0 0 3px rgb(140 175 122 / 35%);
+}
+
+[data-earthing-theme='dark'] {
+  --earthing-bg-primary: var(--earthing-forest-950);
+  --earthing-bg-secondary: var(--earthing-forest-900);
+  --earthing-bg-card: var(--earthing-forest-800);
+  --earthing-bg-elevated: var(--earthing-forest-700);
+  --earthing-bg-accent: var(--earthing-forest-700);
+  --earthing-bg-inverse: var(--earthing-neutral-50);
+  --earthing-bg-input: var(--earthing-forest-800);
+  --earthing-bg-footer: var(--earthing-forest-900);
+  --earthing-bg-banner: var(--earthing-forest-700);
+  --earthing-text-primary: var(--earthing-neutral-50);
+  --earthing-text-secondary: var(--earthing-forest-200);
+  --earthing-text-tertiary: var(--earthing-forest-300);
+  --earthing-text-inverse: var(--earthing-forest-800);
+  --earthing-text-on-accent: var(--earthing-forest-950);
+  --earthing-text-tag: var(--earthing-forest-100);
+  --earthing-text-link: var(--earthing-forest-300);
+  --earthing-border-default: var(--earthing-forest-500);
+  --earthing-border-strong: var(--earthing-forest-200);
+  --earthing-border-subtle: var(--earthing-forest-700);
+  --earthing-action-secondary: var(--earthing-forest-800);
+  --earthing-action-secondary-text: var(--earthing-neutral-50);
+  --earthing-tag-bg: var(--earthing-forest-700);
+  --earthing-tag-text: var(--earthing-forest-100);
+}

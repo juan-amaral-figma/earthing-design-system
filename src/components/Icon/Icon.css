@@ -1,0 +1,5 @@
+.earthing-icon { display:inline-flex;width:16px;height:20px;align-items:center;justify-content:center;color:var(--earthing-accent-primary);font:500 14px/1 var(--earthing-font-body);flex:none; }
+.earthing-icon img { display:block;width:16px;height:20px;object-fit:contain; }
+.earthing-icon--arrow-right { width:11px;height:14px;font-size:14px; }
+.earthing-icon--chevron-right { width:6px;height:14px;font-size:18px; }
+.earthing-icon--double-arrow { width:8px;height:14px;font-size:16px; }

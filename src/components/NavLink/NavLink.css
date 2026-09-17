@@ -1,0 +1,1 @@
+.earthing-nav-link { display:inline-flex;padding:8px 4px;color:var(--earthing-text-secondary);font:500 14px/1 var(--earthing-font-body);text-decoration:none;white-space:nowrap;transition:color .15s ease; }.earthing-nav-link:hover { color:var(--earthing-text-primary); }.earthing-nav-link:focus-visible { border-radius:4px;outline:0;box-shadow:var(--earthing-focus-ring); }

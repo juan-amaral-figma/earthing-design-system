@@ -1,17 +1,30 @@
 {
   "name": "earthing-design-system",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "module": "./dist/earthing-design-system.js",
+  "types": "./dist/types/index.d.ts",
+  "files": ["dist"],
+  "sideEffects": ["**/*.css"],
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/earthing-design-system.js"
+    },
+    "./styles.css": "./dist/earthing-design-system.css"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run build:catalog && npm run build:lib",
+    "build:catalog": "tsc -b && vite build",
+    "build:lib": "vite build --config vite.lib.config.ts --mode library && tsc -p tsconfig.lib.json",
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -23,6 +36,8 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.6",
     "globals": "^17.12.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.69.0",
     "vite": "^8.3.0"

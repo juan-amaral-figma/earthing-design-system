@@ -1,0 +1,4 @@
+.earthing-button { display:inline-flex;min-height:42px;align-items:center;justify-content:center;padding:12px 24px;border-radius:var(--earthing-radius-pill);font:600 14px/1 var(--earthing-font-body);white-space:nowrap;cursor:pointer;transition:filter .15s ease,box-shadow .15s ease,transform .15s ease; }
+.earthing-button:hover:not(:disabled) { filter:brightness(.96); }.earthing-button:active:not(:disabled) { transform:translateY(1px); }.earthing-button:focus-visible { outline:0;box-shadow:var(--earthing-focus-ring); }.earthing-button:disabled { cursor:not-allowed;opacity:.5; }
+.earthing-button--primary { border:0;background:var(--earthing-accent-primary);color:var(--earthing-text-on-accent); }
+.earthing-button--secondary { min-height:45px;border:1.5px solid var(--earthing-border-default);background:var(--earthing-action-secondary);color:var(--earthing-action-secondary-text); }
