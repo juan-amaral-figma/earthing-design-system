@@ -1,0 +1,9 @@
+{
+  "codeConnect": {
+    "include": ["src/components/**/*.figma.ts"],
+    "exclude": ["node_modules/**", "dist/**", "catalog-dist/**"],
+    "label": "React",
+    "language": "jsx",
+    "interactiveSetupFigmaFileUrl": "https://www.figma.com/design/iSAyrPTYN18NDK6embp4pX/Earthing"
+  }
+}
