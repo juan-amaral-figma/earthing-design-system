@@ -25,7 +25,7 @@ export interface ItineraryCardProps extends HTMLAttributes<HTMLElement> {
   imageAlt?: string
 }
 
-export const ItineraryCard = forwardRef<HTMLElement, ItineraryCardProps>(
+export const ItineraryCard = /* @__PURE__ */ forwardRef<HTMLElement, ItineraryCardProps>(
   function ItineraryCard(
     {
       title,

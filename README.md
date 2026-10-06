@@ -5,9 +5,8 @@ A typed React component library based on the Earthing Figma design system. It in
 ## Structure
 
 ```text
-public/
-└── earthing/              # Versioned Figma exports
 src/
+├── assets/earthing/       # Original library images and SVGs (static imports)
 ├── components/            # One folder per public component
 │   └── Button/
 │       ├── Button.tsx
@@ -51,6 +50,8 @@ export function Example() {
   )
 }
 ```
+
+Library images and SVGs are included through static imports. The library build embeds them as data URLs, so consumers do not need an asset-copy step or a `/earthing/` directory. The catalog build emits hashed image files using the same originals.
 
 Load **Young Serif** and **DM Sans** in the consuming application. The package deliberately supplies fallback fonts instead of making a hidden network request.
 

@@ -1,6 +1,6 @@
 import type { HTMLAttributes } from 'react'
 import { classNames } from '../../utils/classNames'
-import { assetUrl } from '../../utils/assetUrl'
+import { microphoneUrl } from '../../utils/assetUrl'
 import './Icon.css'
 
 export type IconName = 'arrow-right' | 'chevron-right' | 'double-arrow' | 'microphone'
@@ -10,7 +10,7 @@ export function Icon({ name, decorative = true, className, ...props }: IconProps
   const accessibilityProps = decorative
     ? { 'aria-hidden': true as const }
     : { role: 'img', 'aria-label': props['aria-label'] ?? name.replaceAll('-', ' ') }
-  if (name === 'microphone') return <span className={classNames('earthing-icon', className)} {...props} {...accessibilityProps}><img src={assetUrl('microphone.svg')} alt="" /></span>
+  if (name === 'microphone') return <span className={classNames('earthing-icon', className)} {...props} {...accessibilityProps}><img src={microphoneUrl} alt="" /></span>
   const glyph = name === 'arrow-right' ? '→' : name === 'chevron-right' ? '›' : '»'
   return <span className={classNames('earthing-icon', `earthing-icon--${name}`, className)} {...props} {...accessibilityProps}>{glyph}</span>
 }

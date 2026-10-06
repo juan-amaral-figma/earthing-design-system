@@ -1,12 +1,16 @@
 {
-  "name": "earthing-design-system",
-  "private": true,
-  "version": "0.1.0",
+  "name": "@juan-ds/earthing-design-system",
+  "private": false,
+  "version": "0.1.1",
   "type": "module",
   "module": "./dist/earthing-design-system.js",
   "types": "./dist/types/index.d.ts",
-  "files": ["dist"],
-  "sideEffects": ["**/*.css"],
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "exports": {
     ".": {
       "types": "./dist/types/index.d.ts",
