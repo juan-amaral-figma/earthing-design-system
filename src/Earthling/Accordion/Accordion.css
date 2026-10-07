@@ -1,0 +1,81 @@
+/* ---------------------------------------------------------------------------
+   Accordion
+   Tokens: uses only public --earthing-* custom properties.
+   --------------------------------------------------------------------------- */
+
+.earthing-accordion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Item —————————————————————————————————————————————————————————————————— */
+
+.earthing-accordion-item {
+  border-bottom: 1px solid var(--earthing-forest-600);
+  overflow: hidden;
+}
+
+.earthing-accordion-item:first-child {
+  border-top: 1px solid var(--earthing-forest-600);
+}
+
+/* Trigger ————————————————————————————————————————————————————————————————*/
+
+.earthing-accordion-trigger {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: var(--earthing-text-primary);
+  font-family: var(--earthing-font-body);
+  font-size: 14px;
+  line-height: 1;
+}
+
+.earthing-accordion-trigger:focus-visible {
+  outline: none;
+  box-shadow: var(--earthing-focus-ring);
+  border-radius: 4px;
+}
+
+.earthing-accordion-trigger-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+
+/* Chevron ———————————————————————————————————————————————————————————————— */
+
+.earthing-accordion-chevron {
+  flex-shrink: 0;
+  color: var(--earthing-accent-primary);
+  transition: transform 0.25s ease;
+}
+
+.earthing-accordion-chevron[data-open='true'] {
+  transform: rotate(180deg);
+}
+
+/* Panel —————————————————————————————————————————————————————————————————— */
+
+.earthing-accordion-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.earthing-accordion-panel[data-open='true'] {
+  grid-template-rows: 1fr;
+}
+
+.earthing-accordion-panel-inner {
+  overflow: hidden;
+}
